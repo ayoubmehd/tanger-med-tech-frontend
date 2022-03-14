@@ -78,7 +78,7 @@ export default function Sidebar() {
             <hr className="my-4 md:min-w-full" />
             {/* Heading */}
             <h6 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
-              Admin Layout Pages
+              Pages
             </h6>
             {/* Navigation */}
             <ul className="md:flex-col md:min-w-full flex flex-col list-none">
@@ -93,7 +93,7 @@ export default function Sidebar() {
               <li className="items-center">
                 <Link href="/admin/settings">
                   <a className="text-xs uppercase py-3 font-bold block ">
-                    <i className={"fas fa-tools mr-2 text-sm "}></i> Settings
+                    Reservations
                   </a>
                 </Link>
               </li>
@@ -123,22 +123,19 @@ export default function Sidebar() {
             {/* Navigation */}
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="items-center">
-                <Link href="/auth/login">
-                  <a className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block">
-                    <i className="fas fa-fingerprint text-blueGray-400 mr-2 text-sm"></i>{" "}
-                    Login
+                <Link href="/admin/settings">
+                  <a className="text-xs uppercase py-3 font-bold block ">
+                    <i className={"fas fa-tools mr-2 text-sm "}></i> Settings
                   </a>
                 </Link>
               </li>
-
               <li className="items-center">
-                {/* <Link
-                  className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-                  href="/auth/register"
-                >
-                  <i className="fas fa-clipboard-list text-blueGray-300 mr-2 text-sm"></i>{" "}
-                  Register
-                </Link> */}
+                <Link href="/auth/login">
+                  <a className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block">
+                    <i className="fas fa-sign-out-alt text-blueGray-400 mr-2 text-sm"></i>{" "}
+                    Logout
+                  </a>
+                </Link>
               </li>
             </ul>
             {/* Divider */}
